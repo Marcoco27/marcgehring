@@ -3,63 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Marc Gehring - Journaliste et explorateur digital">
-    <title>Marc Gehring</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Marc Gehring - Journaliste & Explorateur Digital</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <div class="container">
         <header>
             <h1>Marc Gehring</h1>
-            <p class="tagline">Journaliste & explorateur digital</p>
+            <p class="tagline">Journaliste & Explorateur Digital</p>
         </header>
 
+        <nav>
+            <a href="#a-propos">À propos</a>
+            <a href="#experience">Expérience</a>
+            <a href="#formation">Formation</a>
+            <a href="#competences">Compétences</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
         <main>
-            <section id="about">
+            <section id="a-propos" class="fade-in">
                 <h2>À propos</h2>
                 <p>
-                    Journaliste depuis 1998, j’ai couvert des événements majeurs pour M6 (<em>66 Minutes</em>, <em>Capital</em>), TF1 et BFMTV.
-                    Aujourd’hui, je me forme à l’IA et au digital à l’ESCP Paris, et je développe des outils pour automatiser la veille et la création de contenu.
+                    Journaliste depuis plus de 20 ans, décrit comme autonome, enthousiaste et rigoureux. Ma carrière s'est principalement construite au sein du <strong>Groupe M6</strong>, où j'ai couvert des sujets variés pour des émissions phares comme <em>Capital</em> et <em>66 Minutes</em>.
+                </p>
+                <p>
+                    Passionné par les mutations de notre monde, je me spécialise aujourd'hui dans l'impact de l'<strong>Intelligence Artificielle</strong>, en suivant une formation à l'ESCP. Mon objectif est de développer des outils innovants pour automatiser la veille et la création de contenu, alliant mon expertise journalistique aux nouvelles technologies.
                 </p>
             </section>
 
-            <section id="experience">
-                <h2>Expérience</h2>
-                <div class="experience-item">
-                    <h3>M6 – 66 Minutes, Capital</h3>
-                    <p>Reportages et réalisation (1998–2024)</p>
+            <section id="experience" class="fade-in">
+                <h2>Expérience Professionnelle</h2>
+                <div class="experience-list">
+                    <div class="experience-item">
+                        <h3>Grand Reporter - 66 Minutes</h3>
+                        <p class="experience-meta">Groupe M6 | Neuilly-sur-Seine | sept. 2024 - aujourd'hui</p>
+                        <p>Reportages pour l'émission d'actualité "66 Minutes".</p>
+                    </div>
+                    <div class="experience-item">
+                        <h3>Grand Reporter - Capital</h3>
+                        <p class="experience-meta">Groupe M6 | Neuilly-sur-Seine | janv. 2019 - oct. 2024 (5 ans 10 mois)</p>
+                        <p>Réalisation de reportages de 30 minutes pour le magazine économique "Capital".</p>
+                    </div>
+                    <div class="experience-item">
+                        <h3>Journaliste Plurimédia</h3>
+                        <p class="experience-meta">Groupe M6 | Neuilly-sur-Seine | oct. 2005 - janv. 2019 (13 ans 4 mois)</p>
+                        <p>Reportages pour les journaux télévisés (12h45 & 19h45). Inclut une mission comme envoyé spécial en Ukraine.</p>
+                    </div>
+                     <div class="experience-item">
+                        <h3>Journaliste Freelance</h3>
+                        <p class="experience-meta">TF1 le Groupe | Bordeaux | 2000 - 2005 (5 ans)</p>
+                        <p>Reportages en tant que journaliste indépendant pour le groupe TF1.</p>
+                    </div>
                 </div>
-                <div class="experience-item">
-                    <h3>Livres</h3>
-                    <p>Co-auteur de <em>Connaître le Poitou</em> (2005) et <em>La Charente-Maritime à vélo</em> (photographies et texte).</p>
-                </div>
-                <div class="experience-item">
-                    <h3>Formation IA</h3>
-                    <p>Certification "Piloter la transformation digitale avec l’IA" – ESCP Paris (2025).</p>
+            </section>
+            
+            <section id="publications" class="fade-in">
+                <h2>Publications</h2>
+                 <div class="experience-item">
+                    <h3>Co-auteur de livres</h3>
+                    <p class="experience-meta">Éditions diverses</p>
+                    <ul>
+                        <li><em>Connaître le Poitou</em> (2005)</li>
+                        <li><em>La Charente-Maritime à vélo</em> (photographies et texte)</li>
+                    </ul>
                 </div>
             </section>
 
-            <section id="skills">
+            <section id="formation" class="fade-in">
+                <h2>Formation</h2>
+                <div class="experience-list">
+                    <div class="experience-item">
+                        <h3>IA et Automatisation</h3>
+                        <p class="experience-meta">ESCP Business School | Paris | 2025 (en cours)</p>
+                        <p>Certification "Piloter la transformation digitale avec l’IA".</p>
+                    </div>
+                    <div class="experience-item">
+                        <h3>Journalisme</h3>
+                        <p class="experience-meta">CFPJ | Montpellier | 1997 - 1998</p>
+                        <p>Formation initiale aux métiers du journalisme.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="competences" class="fade-in">
                 <h2>Compétences</h2>
-                <ul class="skills-list">
-                    <li>Journalisme d’investigation</li>
-                    <li>Prompt engineering</li>
-                    <li>Montage vidéo (Avid, Final Cut)</li>
-                    <li>Photographie (Velvia 50, numérique)</li>
-                </ul>
+                <div class="skills-container">
+                    <div class="skills-category">
+                        <h3>Journalisme & Médias</h3>
+                        <ul class="skills-list">
+                            <li>Journalisme d'investigation</li>
+                            <li>Reportage TV (Capital, 66 Minutes)</li>
+                            <li>Storytelling & Rédaction</li>
+                            <li>Montage Vidéo (Avid, Final Cut)</li>
+                            <li>Photographie</li>
+                        </ul>
+                    </div>
+                    <div class="skills-category">
+                        <h3>Digital & Technologie</h3>
+                        <ul class="skills-list">
+                            <li>Prompt Engineering</li>
+                            <li>Intelligence Artificielle (Veille & Application)</li>
+                            <li>Développement économique</li>
+                            <li>Sciences économiques</li>
+                            <li>Automatisation de contenu</li>
+                        </ul>
+                    </div>
+                </div>
             </section>
 
-            <section id="contact">
+            <section id="contact" class="fade-in">
                 <h2>Contact</h2>
-                <p>Pour échanger : <a href="mailto:marcwgehring@gmail.com">contact@marcgehring.fr</a> ou <a href="https://linkedin.com/in/marcgehring" target="_blank">LinkedIn</a>.</p>
+                <p>Pour toute question ou proposition de collaboration, n'hésitez pas à me contacter.</p>
+                <p class="contact-links">
+                    <a href="mailto:contact@marcgehring.fr" class="button">Email</a>
+                    <a href="https://www.linkedin.com/in/marc-gehring-6691436b" target="_blank" rel="noopener noreferrer" class="button">LinkedIn</a>
+                </p>
             </section>
         </main>
 
         <footer>
-            <p>© 2025 Marc Gehring</p>
+            <p>&copy; 2025 Marc Gehring - Tous droits réservés.</p>
         </footer>
     </div>
 
