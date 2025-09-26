@@ -5,6 +5,7 @@
     --color-primary: #4a69bd; /* Bleu ardoise */
     --color-primary-dark: #3c5699; /* Bleu ardoise foncé (hover) */
     --color-accent: #38b2ac; /* Sarcelle (pour les badges) */
+    --color-live: #28a745; /* Vert pour le statut "Live" */
     --color-bg: #f7fafc; /* Gris très clair */
     --color-card-bg: #ffffff;
     --color-border: #e2e8f0;
@@ -129,7 +130,6 @@ section {
     margin-bottom: 0.25rem;
 }
 
-/* Style pour les titres de projet cliquables */
 .card-header h3 a {
     color: inherit;
     text-decoration: none;
@@ -159,8 +159,9 @@ section {
     margin-left: 1rem;
 }
 
-.status-badge.in-progress, .status-badge.actif { background-color: var(--color-accent); }
+.status-badge.actif { background-color: var(--color-accent); }
 .status-badge.completed { background-color: var(--color-text-light); }
+.status-badge.live { background-color: var(--color-live); } /* NOUVELLE RÈGLE */
 
 /* --- Compétences --- */
 .skills-container {
