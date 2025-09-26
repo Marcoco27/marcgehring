@@ -18,14 +18,23 @@
             <p class="tagline">Journaliste & Explorateur Digital</p>
         </header>
 
+        <!-- SECTION CONTACT DÉPLACÉE ET REPENSÉE -->
+        <section id="contact" class="fade-in">
+            <div class="contact-links">
+                <a href="mailto:contact@marcgehring.fr" class="button">Email</a>
+                <a href="https://www.linkedin.com/in/marc-gehring-6691436b" target="_blank" rel="noopener noreferrer" class="button">LinkedIn</a>
+                <a href="https://x.com/marcgehring" target="_blank" rel="noopener noreferrer" class="button">X (Twitter)</a>
+            </div>
+        </section>
+
+        <!-- Barre de navigation mise à jour (sans le lien Contact) -->
         <nav>
             <a href="#a-propos">À propos</a>
-            <a href="#experience">Expérience</a>
             <a href="#projets">Projets</a>
+            <a href="#experience">Expérience</a>
             <a href="#publications">Publications</a>
             <a href="#formation">Formation</a>
             <a href="#competences">Compétences</a>
-            <a href="#contact">Contact</a>
         </nav>
 
         <main>
@@ -35,14 +44,53 @@
                     Journaliste depuis plus de 25 ans, décrit comme autonome, enthousiaste et rigoureux. Ma carrière s'est principalement construite au sein du <strong>Groupe M6</strong>, où j'ai couvert des sujets variés pour des émissions phares comme <em>Capital</em> et <em>66 Minutes</em>.
                 </p>
                 <p>
-                    Passionné par les mutations de notre monde, je me spécialise aujourd'hui dans l'impact de l'<strong>Intelligence Artificielle</strong>, en suivant <a href="#formation">une formation</a> à l'ESCP. Mon objectif est de développer des outils innovants pour automatiser la veille et la création de contenu, alliant mon expertise journalistique aux nouvelles technologies.
+                    Passionné par les mutations de notre monde, je me spécialise aujourd'hui dans l'impact de l'<strong>Intelligence Artificielle</strong>, en suivant une formation à l'ESCP. Mon objectif est de développer des outils innovants pour automatiser la veille et la création de contenu, alliant mon expertise journalistique aux nouvelles technologies.
                 </p>
+            </section>
+            
+            <!-- SECTION PROJETS DÉPLACÉE ICI -->
+            <section id="projets" class="fade-in">
+                <h2>Projets & Portfolio 🚀</h2>
+                <div class="card-list">
+                    <div class="card-item">
+                        <div class="card-header">
+                            <h3><a href="https://promptsmg-663481645724.us-west1.run.app/" target="_blank" rel="noopener noreferrer">PromptsMG</a></h3>
+                            <div class="badge-group">
+                                <span class="status-badge live">Live</span>
+                                <span class="status-badge private">Privé</span>
+                            </div>
+                        </div>
+                        <p class="card-meta">Google Cloud Run, Gemini API, Google Auth, JavaScript</p>
+                        <p>Application web sécurisée pour centraliser, organiser et optimiser des prompts. Elle intègre une bibliothèque personnelle, un éditeur avec variables dynamiques, et un assistant de création propulsé par l'IA (Gemini) pour générer des prompts sur-mesure.</p>
+                    </div>
+
+                    <div class="card-item">
+                        <div class="card-header">
+                            <h3><a href="https://marcoco27.github.io/voyage-malaisie/" target="_blank" rel="noopener noreferrer">App Voyage Malaisie & Singapour</a></h3>
+                            <div class="badge-group">
+                                <span class="status-badge live">Live</span>
+                            </div>
+                        </div>
+                        <p class="card-meta">HTML, CSS, JavaScript (ES6 Modules), Leaflet.js, API OpenWeatherMap</p>
+                        <p>Application web interactive présentant un itinéraire de 20 jours avec carte Leaflet, widgets et fiches d'information. Construite en JavaScript moderne sans framework, elle est pilotée par un fichier JSON.</p>
+                    </div>
+
+                    <div class="card-item">
+                        <div class="card-header">
+                            <h3><a href="https://x.com/ArtMomentum_" target="_blank" rel="noopener noreferrer">ArtMomentum_ Bot</a></h3>
+                            <div class="badge-group">
+                                <span class="status-badge actif">Actif</span>
+                            </div>
+                        </div>
+                        <p class="card-meta">Projet personnel | Python, API X, Intelligence Artificielle</p>
+                        <p>Bot intelligent et automatisé qui partage quotidiennement des œuvres d'art sur les réseaux sociaux, enrichies d'informations pertinentes et d'anecdotes captivantes, afin de créer une communauté engagée autour de l'histoire de l'art.</p>
+                    </div>
+                </div>
             </section>
 
             <section id="experience" class="fade-in">
                 <h2>Expérience Professionnelle 💼</h2>
                 <div class="card-list">
-                    <!-- Cartes d'expérience existantes... -->
                     <div class="card-item">
                         <h3>Grand Reporter - 66 Minutes</h3>
                         <p class="card-meta">Groupe M6 | Neuilly-sur-Seine | sept. 2024 - aujourd'hui</p>
@@ -65,47 +113,6 @@
                     </div>
                 </div>
             </section>
-            
-            <section id="projets" class="fade-in">
-                <h2>Projets & Portfolio 🚀</h2>
-                <div class="card-list">
-                    <!-- NOUVEAU PROJET AJOUTÉ ICI -->
-                    <div class="card-item">
-                        <div class="card-header">
-                            <h3><a href="https://promptsmg-663481645724.us-west1.run.app/" target="_blank" rel="noopener noreferrer">PromptsMG</a></h3>
-                            <div class="badge-group">
-                                <span class="status-badge live">Live</span>
-                                <span class="status-badge private">Privé</span>
-                            </div>
-                        </div>
-                        <p class="card-meta">Google Cloud Run, Gemini API, Google Auth, JavaScript</p>
-                        <p>Application web sécurisée pour centraliser, organiser et optimiser des prompts. Elle intègre une bibliothèque personnelle, un éditeur avec variables dynamiques, et un assistant de création propulsé par l'IA (Gemini) pour générer des prompts sur-mesure.</p>
-                    </div>
-                    <!-- FIN DU NOUVEAU PROJET -->
-
-                    <div class="card-item">
-                        <div class="card-header">
-                            <h3><a href="https://marcoco27.github.io/voyage-malaisie/" target="_blank" rel="noopener noreferrer">App Voyage Malaisie & Singapour</a></h3>
-                            <div class="badge-group">
-                                <span class="status-badge live">Live</span>
-                            </div>
-                        </div>
-                        <p class="card-meta">HTML, CSS, JavaScript (ES6 Modules), Leaflet.js, API OpenWeatherMap</p>
-                        <p>Application web interactive présentant un itinéraire de 20 jours avec carte Leaflet, widgets (météo, horloges) et fiches d'information. Construite en JavaScript moderne sans framework, elle est pilotée par un fichier JSON.</p>
-                    </div>
-
-                    <div class="card-item">
-                        <div class="card-header">
-                            <h3><a href="https://x.com/ArtMomentum_" target="_blank" rel="noopener noreferrer">ArtMomentum_ Bot</a></h3>
-                            <div class="badge-group">
-                                <span class="status-badge actif">Actif</span>
-                            </div>
-                        </div>
-                        <p class="card-meta">Projet personnel | Python, API X, Intelligence Artificielle</p>
-                        <p>Bot intelligent et automatisé qui partage quotidiennement des œuvres d'art sur les réseaux sociaux, enrichies d'informations pertinentes et d'anecdotes captivantes, afin de créer une communauté engagée autour de l'histoire de l'art.</p>
-                    </div>
-                </div>
-            </section>
 
             <section id="publications" class="fade-in">
                 <h2>Publications 📚</h2>
@@ -124,7 +131,6 @@
             <section id="formation" class="fade-in">
                 <h2>Formation 🎓</h2>
                 <div class="card-list">
-                    <!-- Cartes de formation existantes... -->
                     <div class="card-item">
                         <h3>IA et Automatisation</h3>
                         <p class="card-meta">ESCP Business School | Paris | 2025 (en cours)</p>
@@ -141,7 +147,6 @@
             <section id="competences" class="fade-in">
                 <h2>Compétences 🎯</h2>
                 <div class="skills-container">
-                    <!-- Compétences existantes... -->
                     <div class="skills-category">
                         <h3>Journalisme & Médias</h3>
                         <ul class="skills-list">
@@ -164,16 +169,6 @@
                         </ul>
                     </div>
                 </div>
-            </section>
-
-            <section id="contact" class="fade-in">
-                <h2>Contact 📧</h2>
-                <p>N'hésitez pas à me contacter.</p>
-                <p class="contact-links">
-                    <a href="mailto:marcwgehring@gmail.com" class="button">Email</a>
-                    <a href="https://www.linkedin.com/in/marc-gehring-6691436b" target="_blank" rel="noopener noreferrer" class="button">LinkedIn</a>
-                    <a href="https://x.com/marcgehring" target="_blank" rel="noopener noreferrer" class="button">X (Twitter)</a>
-                </p>
             </section>
         </main>
 
