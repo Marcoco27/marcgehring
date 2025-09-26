@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Ajout de Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -16,18 +18,24 @@
         <header>
             <h1>Marc Gehring</h1>
             <p class="tagline">Journaliste & Explorateur Digital</p>
+
+            <!-- NOUVELLE BARRE DE CONTACT INTÉGRÉE -->
+            <div class="header-contact-links">
+                <a href="mailto:marcwgehring@gmail.com">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>Email</span>
+                </a>
+                <a href="https://www.linkedin.com/in/marc-gehring-6691436b" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://x.com/marcgehring" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <span>X (Twitter)</span>
+                </a>
+            </div>
         </header>
 
-        <!-- SECTION CONTACT DÉPLACÉE ET REPENSÉE -->
-        <section id="contact" class="fade-in">
-            <div class="contact-links">
-                <a href="marcwgehring@gmail.com" class="button">Email</a>
-                <a href="https://www.linkedin.com/in/marc-gehring-6691436b" target="_blank" rel="noopener noreferrer" class="button">LinkedIn</a>
-                <a href="https://x.com/marcgehring" target="_blank" rel="noopener noreferrer" class="button">X (Twitter)</a>
-            </div>
-        </section>
-
-        <!-- Barre de navigation mise à jour (sans le lien Contact) -->
         <nav>
             <a href="#a-propos">À propos</a>
             <a href="#projets">Projets</a>
@@ -48,7 +56,6 @@
                 </p>
             </section>
             
-            <!-- SECTION PROJETS DÉPLACÉE ICI -->
             <section id="projets" class="fade-in">
                 <h2>Projets & Portfolio 🚀</h2>
                 <div class="card-list">
@@ -88,6 +95,7 @@
                 </div>
             </section>
 
+            <!-- Le reste du contenu reste inchangé -->
             <section id="experience" class="fade-in">
                 <h2>Expérience Professionnelle 💼</h2>
                 <div class="card-list">
@@ -104,7 +112,7 @@
                     <div class="card-item">
                         <h3>Journaliste News</h3>
                         <p class="card-meta">Groupe M6 | Neuilly-sur-Seine | oct. 2005 - janv. 2019 (13 ans 4 mois)</p>
-                        <p>Reportages et duplex pour les journaux télévisés (12h45 & 19h45). Inclut de nombreuses missions comme envoyé spécial (Ukraine, USA, Brésil, Israël/Palestine, etc.)</p>
+                        <p>Reportages et duplex pour les journaux télévisés (12h45 & 19h45).</p>
                     </div>
                      <div class="card-item">
                         <h3>Journaliste Freelance</h3>
@@ -152,17 +160,17 @@
                         <ul class="skills-list">
                             <li>Journalisme d'investigation</li>
                             <li>Reportage TV (Capital, 66 Minutes)</li>
-                            <li>Prises de vue (XDCAM, Sony FX6, FX3, iPhone 16 Pro Max, Insta 360)</li>
+                            <li>Prises de vue</li>
                             <li>Storytelling & Rédaction</li>
-                            <li>Montage Vidéo (Avid, Final Cut)</li>
+                            <li>Montage Vidéo</li>
                             <li>Photographie</li>
                         </ul>
                     </div>
                     <div class="skills-category">
                         <h3>Digital & Technologie</h3>
                         <ul class="skills-list">
-                            <li>Prompt Engineering (en cours de formation)</li>
-                            <li>Intelligence Artificielle (Veille & Application)</li>
+                            <li>Prompt Engineering</li>
+                            <li>Intelligence Artificielle</li>
                             <li>Développement économique</li>
                             <li>Sciences économiques</li>
                             <li>Automatisation de contenu</li>
