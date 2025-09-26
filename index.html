@@ -3,24 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Marc Gehring - Journaliste et explorateur digital">
     <title>Marc Gehring</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Inter', sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 2rem; }
-        h1 { font-size: 2.5rem; margin-bottom: 1rem; }
-        section { margin-bottom: 3rem; }
-        a { color: #0066cc; text-decoration: none; }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Marc Gehring</h1>
-        <p>Journaliste & Explorateur digital</p>
-    </header>
-    <section id="about">
-        <h2>À propos</h2>
-        <p>Texte court et percutant...</p>
-    </section>
-    <!-- Autres sections -->
+    <div class="container">
+        <header>
+            <h1>Marc Gehring</h1>
+            <p class="tagline">Journaliste & explorateur digital</p>
+        </header>
+
+        <main>
+            <section id="about">
+                <h2>À propos</h2>
+                <p>
+                    Journaliste depuis 1998, j’ai couvert des événements majeurs pour M6 (<em>66 Minutes</em>, <em>Capital</em>), TF1 et BFMTV.
+                    Aujourd’hui, je me forme à l’IA et au digital à l’ESCP Paris, et je développe des outils pour automatiser la veille et la création de contenu.
+                </p>
+            </section>
+
+            <section id="experience">
+                <h2>Expérience</h2>
+                <div class="experience-item">
+                    <h3>M6 – 66 Minutes, Capital</h3>
+                    <p>Reportages et réalisation (1998–2024)</p>
+                </div>
+                <div class="experience-item">
+                    <h3>Livres</h3>
+                    <p>Co-auteur de <em>Connaître le Poitou</em> (2005) et <em>La Charente-Maritime à vélo</em> (photographies et texte).</p>
+                </div>
+                <div class="experience-item">
+                    <h3>Formation IA</h3>
+                    <p>Certification "Piloter la transformation digitale avec l’IA" – ESCP Paris (2025).</p>
+                </div>
+            </section>
+
+            <section id="skills">
+                <h2>Compétences</h2>
+                <ul class="skills-list">
+                    <li>Journalisme d’investigation</li>
+                    <li>Prompt engineering</li>
+                    <li>Montage vidéo (Avid, Final Cut)</li>
+                    <li>Photographie (Velvia 50, numérique)</li>
+                </ul>
+            </section>
+
+            <section id="contact">
+                <h2>Contact</h2>
+                <p>Pour échanger : <a href="mailto:contact@marcgehring.fr">contact@marcgehring.fr</a> ou <a href="https://linkedin.com/in/marcgehring" target="_blank">LinkedIn</a>.</p>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2025 Marc Gehring</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
