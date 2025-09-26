@@ -126,12 +126,22 @@ main > section {
     transition: color 0.2s ease-in-out;
 }
 
+/* NOUVELLES RÈGLES POUR AMÉLIORER L'INTERACTION */
+#email-link {
+    cursor: pointer; /* Indique que l'élément est cliquable */
+}
+
 .header-contact-links a:hover {
     color: var(--color-primary);
 }
 
 .header-contact-links i {
-    font-size: 1.1rem; /* Légèrement plus grand que le texte */
+    font-size: 1.1rem;
+    transition: transform 0.2s ease-in-out;
+}
+
+.header-contact-links a:hover i {
+    transform: scale(1.1); /* Léger zoom sur l'icône au survol */
 }
 
 /* --- Composants : Cartes & Badges --- */
