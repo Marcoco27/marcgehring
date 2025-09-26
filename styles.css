@@ -6,6 +6,7 @@
     --color-primary-dark: #3c5699; /* Bleu ardoise foncé (hover) */
     --color-accent: #38b2ac; /* Sarcelle (pour les badges) */
     --color-live: #28a745; /* Vert pour le statut "Live" */
+    --color-private: #fd7e14; /* Orange pour le statut "Privé" */
     --color-bg: #f7fafc; /* Gris très clair */
     --color-card-bg: #ffffff;
     --color-border: #e2e8f0;
@@ -127,7 +128,8 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 0.25rem;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .card-header h3 a {
@@ -149,19 +151,24 @@ section {
     margin-bottom: 0.75rem !important;
 }
 
+.badge-group {
+    display: flex;
+    gap: 0.5rem;
+    flex-shrink: 0;
+}
+
 .status-badge {
     font-size: 0.75rem;
     font-weight: 700;
     padding: 0.25rem 0.6rem;
     border-radius: 12px;
     color: white;
-    flex-shrink: 0;
-    margin-left: 1rem;
 }
 
 .status-badge.actif { background-color: var(--color-accent); }
 .status-badge.completed { background-color: var(--color-text-light); }
-.status-badge.live { background-color: var(--color-live); } /* NOUVELLE RÈGLE */
+.status-badge.live { background-color: var(--color-live); }
+.status-badge.private { background-color: var(--color-private); } /* NOUVELLE RÈGLE */
 
 /* --- Compétences --- */
 .skills-container {
