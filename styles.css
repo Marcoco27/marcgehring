@@ -48,15 +48,14 @@ h1 {
 
 h2 {
     font-size: 1.8rem;
-    margin-top: 0; /* Ajusté pour la première section */
     margin-bottom: 1.5rem;
     padding-bottom: 0.5rem;
     border-bottom: 1px solid var(--color-border);
     color: var(--color-primary);
 }
 
-section:first-of-type h2 {
-    margin-top: 0;
+main > section:first-of-type {
+    margin-top: 0; 
 }
 
 h3 {
@@ -73,7 +72,6 @@ a {
 
 a:hover {
     color: var(--color-primary-dark);
-    text-decoration: underline;
 }
 
 /* --- Structure & Layout --- */
@@ -85,7 +83,7 @@ a:hover {
 
 header {
     text-align: center;
-    margin-bottom: var(--spacing); /* Réduit pour rapprocher la barre de contact */
+    margin-bottom: calc(var(--spacing) * 2);
 }
 
 nav {
@@ -107,25 +105,34 @@ main > section {
     margin-bottom: var(--spacing);
 }
 
-/* --- NOUVEAUX STYLES POUR LA BARRE DE CONTACT --- */
-#contact {
-    background-color: var(--color-card-bg);
-    border-radius: var(--border-radius);
-    padding: 1rem;
-    margin-bottom: calc(var(--spacing) * 2);
-    box-shadow: var(--shadow);
-    text-align: center;
-}
-
-.contact-links {
-    margin: 0;
+/* --- Liens de contact dans l'en-tête --- */
+.header-contact-links {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 2rem;
+    margin-top: 1.5rem;
 }
-/* --- FIN DES NOUVEAUX STYLES --- */
 
+.header-contact-links a {
+    color: var(--color-text-light);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.9rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: color 0.2s ease-in-out;
+}
+
+.header-contact-links a:hover {
+    color: var(--color-primary);
+}
+
+.header-contact-links i {
+    font-size: 1.1rem; /* Légèrement plus grand que le texte */
+}
 
 /* --- Composants : Cartes & Badges --- */
 .card-list {
@@ -211,23 +218,6 @@ main > section {
     font-weight: 700;
 }
 
-/* --- Boutons --- */
-.button {
-    display: inline-block;
-    background-color: var(--color-primary);
-    color: white !important;
-    padding: 0.75rem 1.5rem;
-    border-radius: var(--border-radius);
-    text-decoration: none;
-    font-weight: 700;
-    transition: background-color 0.2s ease-in-out;
-}
-.button:hover {
-    background-color: var(--color-primary-dark);
-    color: white !important;
-    text-decoration: none;
-}
-
 /* --- Footer --- */
 footer {
     margin-top: 4rem;
@@ -253,7 +243,7 @@ footer {
 @media (max-width: 600px) {
     .container { padding: 1.5rem 1rem; }
     h1 { font-size: 2.2rem; }
+    .header-contact-links { gap: 1.5rem; }
     .skills-container { grid-template-columns: 1fr; gap: 0; }
     .skills-category:not(:last-child) { margin-bottom: 2rem; }
-    .contact-links .button { flex-grow: 1; text-align: center; }
 }
