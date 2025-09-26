@@ -1,18 +1,19 @@
-/* --- Variables --- */
+/* --- Variables : Palette "Ardoise & Sarcelle" --- */
 :root {
-    --color-text: #333;
-    --color-text-light: #666;
-    --color-primary: #0056b3; /* Un bleu légèrement plus profond */
-    --color-primary-dark: #004499;
-    --color-bg: #f9f9f9;
+    --color-text: #2d3748; /* Ardoise foncée */
+    --color-text-light: #718096; /* Ardoise claire */
+    --color-primary: #4a69bd; /* Bleu ardoise */
+    --color-primary-dark: #3c5699; /* Bleu ardoise foncé (hover) */
+    --color-accent: #38b2ac; /* Sarcelle (pour les badges) */
+    --color-bg: #f7fafc; /* Gris très clair */
     --color-card-bg: #ffffff;
-    --color-border: #eaeaea;
+    --color-border: #e2e8f0;
     --max-width: 800px;
     --spacing: 2rem;
     --font-sans: 'Inter', sans-serif;
     --font-serif: 'Lora', serif;
     --border-radius: 8px;
-    --shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 /* --- Base & Typographie --- */
@@ -54,7 +55,7 @@ h2 {
 
 h3 {
     font-size: 1.2rem;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0;
     color: var(--color-text);
 }
 
@@ -84,6 +85,7 @@ header {
 nav {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 1.5rem;
     margin-bottom: calc(var(--spacing) * 2);
     padding-bottom: 1rem;
@@ -99,43 +101,65 @@ section {
     margin-bottom: var(--spacing);
 }
 
-/* --- Composants --- */
-.experience-item {
+/* --- Composants : Cartes & Badges --- */
+.card-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.card-item {
     background-color: var(--color-card-bg);
     padding: 1.5rem;
-    margin-bottom: 1.5rem;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
     border: 1px solid var(--color-border);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
-.experience-item p {
-    margin: 0;
+.card-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
 }
 
-.experience-meta {
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.25rem;
+}
+
+.card-item p { margin: 0; }
+.card-item ul { margin: 0.75rem 0 0; padding-left: 20px; }
+.card-item li { margin-bottom: 0.25rem; }
+
+.card-meta {
     color: var(--color-text-light);
     font-size: 0.9rem;
     margin-bottom: 0.75rem !important;
 }
 
+.status-badge {
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.25rem 0.6rem;
+    border-radius: 12px;
+    color: white;
+    flex-shrink: 0;
+}
+
+.status-badge.in-progress { background-color: var(--color-accent); }
+.status-badge.completed { background-color: var(--color-text-light); }
+
+/* --- Compétences --- */
 .skills-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
 }
 
-.skills-list {
-    list-style-type: none;
-    padding: 0;
-}
-
-.skills-list li {
-    margin-bottom: 0.5rem;
-    padding-left: 1.2rem;
-    position: relative;
-}
-
+.skills-list { list-style-type: none; padding: 0; }
+.skills-list li { margin-bottom: 0.5rem; padding-left: 1.2rem; position: relative; }
 .skills-list li:before {
     content: "›";
     color: var(--color-primary);
@@ -144,24 +168,22 @@ section {
     font-weight: 700;
 }
 
-.contact-links {
-    margin-top: 1.5rem;
-}
-
+/* --- Boutons & Footer --- */
+.contact-links { margin-top: 1.5rem; }
 .button {
     display: inline-block;
     background-color: var(--color-primary);
-    color: white;
+    color: white !important;
     padding: 0.75rem 1.5rem;
     border-radius: var(--border-radius);
     text-decoration: none;
     margin-right: 1rem;
     font-weight: 700;
+    transition: background-color 0.2s ease-in-out;
 }
-
 .button:hover {
     background-color: var(--color-primary-dark);
-    color: white;
+    color: white !important;
     text-decoration: none;
 }
 
@@ -180,34 +202,15 @@ footer {
     transform: translateY(20px);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
-
 .fade-in.is-visible {
     opacity: 1;
     transform: translateY(0);
 }
 
-
 /* --- Responsive --- */
 @media (max-width: 600px) {
-    .container {
-        padding: 1.5rem;
-    }
-    
-    h1 {
-        font-size: 2.2rem;
-    }
-
-    nav {
-        flex-wrap: wrap;
-        gap: 1rem;
-    }
-
-    .skills-container {
-        grid-template-columns: 1fr;
-        gap: 0;
-    }
-    
-    .skills-category:not(:last-child) {
-        margin-bottom: 2rem;
-    }
+    .container { padding: 1.5rem 1rem; }
+    h1 { font-size: 2.2rem; }
+    .skills-container { grid-template-columns: 1fr; gap: 0; }
+    .skills-category:not(:last-child) { margin-bottom: 2rem; }
 }
